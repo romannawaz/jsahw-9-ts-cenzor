@@ -1,0 +1,22 @@
+button {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.cenzor-block {
+    margin: 0 auto;
+    padding: 15px;
+
+    width: 50%;
+
+    border-radius: 10px;
+
+    background-color: rgb(238, 238, 238);
+}
+
+.bad-words-list {
+    color: rgb(255, 88, 88);
+}

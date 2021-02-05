@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homework 9</title>
+
+    <!-- Boostrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="cenzor-block">
+            <p class="bad-words">
+                <b>Bad words: <span class="bad-words-list"></span></b>
+            </p>
+
+            <form class="bad-words-form row mt-3" novalidate>
+                <div class="col-6">
+                    <input type="text" class="form-control new-bad-word" placeholder="Word here.." pattern="^.+$"
+                        required>
+                </div>
+                <div class="col-3 d-grid">
+                    <button type="submit" class="btn btn-warning">Add</button>
+                </div>
+                <div class="col-3 d-grid">
+                    <button type="button" class="btn reset-btn btn-danger">Reset</button>
+                </div>
+            </form>
+
+            <form class="cenzor-form row mt-3" novalidate>
+                <div class="form-group">
+                    <textarea class="text form-control" placeholder="Text here.." pattern="^.+$" required></textarea>
+                </div>
+                <div class="d-grid mt-3">
+                    <button type="submit" class="btn btn-success">Cenzor</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

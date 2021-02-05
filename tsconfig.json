@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "watch": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "outFile": "./main.js"
+    },
+    "files": ["ts/main.ts"],
+    "compileOnSave": true
+}
